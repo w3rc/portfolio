@@ -1,10 +1,9 @@
 {
   "main": {
     "name": "Rupayan Chakraborty",
-    "occupation": "FullStack Developer",
-    "description": "Full Stack Developer by Day, Freelancer by Night",
+    "occupation": "Backend Developer",
     "image": "avatar.jpg",
-    "bio": "I'm a Full Stack Web and App Developer, specialized in React & Node.Js(WEB) and Flutter(Mobile). I have also worked with languages like Python, Java and C++ ",
+    "bio": "I'm a Backend Developer, specialized in Node.Js and MongoDB. I have also worked with languages like Python, Java and Rust",
     "contactmessage": "Get in touch with me to receive further details.",
     "email": "rupayanc16@gmail.com",
     "phone": "+91 7908045561",
@@ -29,7 +28,7 @@
       },
       {
         "name": "github",
-        "url": "http://github.com/rupayan10",
+        "url": "http://github.com/w3rc",
         "className": "fa fa-github"
       }
     ]
@@ -46,16 +45,14 @@
     ],
     "work": [
       {
-        "company": "Clever Programmer",
-        "title": "Team Member && React Specialist",
-        "years": "April 2020 - Present",
-        "description": "Teaching ReactJS to thousands of students."
+        "company": "Geotech Infoservices Pvt Ltd",
+        "title": "Software Engineer",
+        "years": "March 2021 - Present"
       },
       {
-        "company": "Lindar Media",
-        "title": "Software Engineer",
-        "years": "Nov 2019 - April 2020",
-        "description": "Building MrQ, a gambling website."
+        "company": "CampusMaster",
+        "title": "Flutter Developer Intern",
+        "years": "September 2020 - November 2020"
       }
     ],
     "skills": [
@@ -65,15 +62,11 @@
       },
       {
         "name": "Node.JS",
-        "level": "70%"
+        "level": "85%"
       },
       {
         "name": "TypeScript",
         "level": "85%"
-      },
-      {
-        "name": "Deno",
-        "level": "65%"
       },
       {
         "name": "Flutter/Dart",
@@ -85,15 +78,15 @@
       },
       {
         "name": "Git",
-        "level": "80%"
+        "level": "90%"
       },
       {
         "name": "MongoDB",
-        "level": "55%"
+        "level": "80%"
       },
       {
-        "name": "Svelte",
-        "level": "45%"
+        "name": "AWS (EC2, S3)",
+        "level": "80%"
       },
       {
         "name": "Firebase (Firestore, Authentication, Cloud Functions)",
@@ -101,19 +94,11 @@
       },
       {
         "name": "Docker",
-        "level": "45%"
+        "level": "55%"
       },
       {
         "name": "HTML5",
         "level": "95%"
-      },
-      {
-        "name": "C++",
-        "level": "70%"
-      },
-      {
-        "name": "Java",
-        "level": "85%"
       },
       {
         "name": "Python",
@@ -127,63 +112,42 @@
         "title": "Amazon Clone",
         "description": "Amazon Clone with React & Firebase",
         "image": "amazon.png",
-        "source": "https://github.com/rupayan10/amazon-clone",
+        "source": "https://github.com/w3rc/amazon-clone",
         "deploy": "https://rc-amazon-clone.netlify.app/"
       },
       {
         "title": "Pizza Joint",
         "description": "Pizza Joint with React & Framer Motion",
         "image": "pizza.png",
-        "source": "https://github.com/rupayan10/Pizza-joint",
-        "deploy": null
+        "source": "https://github.com/w3rc/Pizza-joint",
+        "deploy": "https://rc-pizza-joint.netlify.app/"
       },
       {
         "title": "Spotify Clone",
         "description": "Spotify Clone with Spotify API & React",
         "image": "spotify.png",
-        "source": "https://github.com/rupayan10/spotify-clone",
+        "source": "https://github.com/w3rc/spotify-clone",
         "deploy": "https://rc-spotify-clone.netlify.app/"
       },
       {
         "title": "Tiktok Clone",
         "description": "Tiktok Clone with React, Firestore and Firebase Storage",
         "image": "tiktok.jpg",
-        "source": "https://github.com/rupayan10/tiktok-clone",
+        "source": "https://github.com/w3rc/tiktok-clone",
         "deploy": "https://rc-tiktok-clone.netlify.app/"
-      },
-      {
-        "title": "Burger Builder",
-        "description": "Burger Builder with React",
-        "image": "burger.jpg",
-        "source": "https://github.com/rupayan10/Burger-Builder",
-        "deploy": null
       },
       {
         "title": "A URL Shortener(Backend)",
         "description": "A URL Shortener with Node",
         "image": "rsh.jpeg",
-        "source": "https://github.com/rupayan10/r-sh",
+        "source": "https://github.com/w3rc/r-sh",
         "deploy": null
       },
       {
         "title": "Zoom Clone(Backend)",
         "description": "A Zoom Clone with Node",
         "image": "zoom.png",
-        "source": "https://github.com/rupayan10/zoom-clone",
-        "deploy": null
-      },
-      {
-        "title": "Personal Expenses App",
-        "description": "Personal Expenses App built with Flutter",
-        "image": "expense.png",
-        "source": "https://github.com/rupayan10/Personal-Expenses-app",
-        "deploy": null
-      },
-      {
-        "title": "Meals App",
-        "description": "Meals App built with Flutter",
-        "image": "meals_app.png",
-        "source": "https://github.com/rupayan10/flutter_meals_app",
+        "source": "https://github.com/w3rc/zoom-clone",
         "deploy": null
       }
     ]
