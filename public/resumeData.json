@@ -1,158 +1,154 @@
 {
-  "main": {
-    "name": "Rupayan Chakraborty",
-    "occupation": "Backend Developer",
-    "image": "avatar.jpg",
-    "bio": "I'm a Backend Developer, specialized in Node.Js and MongoDB. I have also worked with languages like Python, Java and Rust",
-    "contactmessage": "Get in touch with me to receive further details.",
-    "email": "rupayanc16@gmail.com",
-    "phone": "+91 7908045561",
-    "address": {
-      "street": "Deshbandhu Para, Malibagan",
-      "city": "Jalpaiguri",
-      "state": "West Bengal",
-      "country": "India",
-      "zip": "735101"
-    },
-    "resumedownload": "https://drive.google.com/file/d/1OsTQGdQN9QdJLxoCleRsPY5-oqgF_l6j/view?usp=sharing",
-    "social": [
-      {
-        "name": "facebook",
-        "url": "https://www.facebook.com/profile.php?id=100011436105652",
-        "className": "fa fa-facebook"
-      },
-      {
-        "name": "linkedin",
-        "url": "https://www.linkedin.com/in/rupayan-chakraborty-0b610214b/",
-        "className": "fa fa-linkedin"
-      },
-      {
-        "name": "github",
-        "url": "http://github.com/w3rc",
-        "className": "fa fa-github"
-      }
-    ]
-  },
-  "resume": {
-    "skillmessage": "These are my skills",
-    "education": [
-      {
-        "school": "Techno Engineering College Banipur",
-        "degree": "B.Tech in Computer Science and Engineering",
-        "graduated": "July 2020",
-        "description": "Graduated with 8.11 DGPA"
-      }
-    ],
-    "work": [
-      {
-        "company": "Geotech Infoservices Pvt Ltd",
-        "title": "Software Engineer",
-        "years": "March 2021 - Present"
-      },
-      {
-        "company": "CampusMaster",
-        "title": "Flutter Developer Intern",
-        "years": "September 2020 - November 2020"
-      }
-    ],
-    "skills": [
-      {
-        "name": "ReactJs",
-        "level": "95%"
-      },
-      {
-        "name": "Node.JS",
-        "level": "85%"
-      },
-      {
-        "name": "TypeScript",
-        "level": "85%"
-      },
-      {
-        "name": "Flutter/Dart",
-        "level": "60%"
-      },
-      {
-        "name": "CSS",
-        "level": "95%"
-      },
-      {
-        "name": "Git",
-        "level": "90%"
-      },
-      {
-        "name": "MongoDB",
-        "level": "80%"
-      },
-      {
-        "name": "AWS (EC2, S3)",
-        "level": "80%"
-      },
-      {
-        "name": "Firebase (Firestore, Authentication, Cloud Functions)",
-        "level": "75%"
-      },
-      {
-        "name": "Docker",
-        "level": "55%"
-      },
-      {
-        "name": "HTML5",
-        "level": "95%"
-      },
-      {
-        "name": "Python",
-        "level": "75%"
-      }
-    ]
-  },
-  "portfolio": {
-    "projects": [
-      {
-        "title": "Amazon Clone",
-        "description": "Amazon Clone with React & Firebase",
-        "image": "amazon.png",
-        "source": "https://github.com/w3rc/amazon-clone",
-        "deploy": "https://rc-amazon-clone.netlify.app/"
-      },
-      {
-        "title": "Pizza Joint",
-        "description": "Pizza Joint with React & Framer Motion",
-        "image": "pizza.png",
-        "source": "https://github.com/w3rc/Pizza-joint",
-        "deploy": "https://rc-pizza-joint.netlify.app/"
-      },
-      {
-        "title": "Spotify Clone",
-        "description": "Spotify Clone with Spotify API & React",
-        "image": "spotify.png",
-        "source": "https://github.com/w3rc/spotify-clone",
-        "deploy": "https://rc-spotify-clone.netlify.app/"
-      },
-      {
-        "title": "Tiktok Clone",
-        "description": "Tiktok Clone with React, Firestore and Firebase Storage",
-        "image": "tiktok.jpg",
-        "source": "https://github.com/w3rc/tiktok-clone",
-        "deploy": "https://rc-tiktok-clone.netlify.app/"
-      },
-      {
-        "title": "A URL Shortener(Backend)",
-        "description": "A URL Shortener with Node",
-        "image": "rsh.jpeg",
-        "source": "https://github.com/w3rc/r-sh",
-        "deploy": null
-      },
-      {
-        "title": "Zoom Clone(Backend)",
-        "description": "A Zoom Clone with Node",
-        "image": "zoom.png",
-        "source": "https://github.com/w3rc/zoom-clone",
-        "deploy": null
-      }
-    ]
-  },
-  "testimonials": {
-    "testimonials": []
-  }
+	"main": {
+		"name": "Rupayan Chakraborty",
+		"occupation": "Backend Developer",
+		"image": "avatar.jpg",
+		"bio": "I'm a Backend Developer, specialized in Node.Js and MongoDB. I have also worked with languages like Python, Java and Rust",
+		"contactmessage": "Get in touch with me to receive further details.",
+		"email": "rupayanc16@gmail.com",
+		"phone": "+91 7908045561",
+		"address": {
+			"street": "Deshbandhu Para, Malibagan",
+			"city": "Jalpaiguri",
+			"state": "West Bengal",
+			"country": "India",
+			"zip": "735101"
+		},
+		"resumedownload": "https://drive.google.com/file/d/1FwAeoLHqmzigdBSJGaXYa_oZNTuqAgjN/view?usp=sharing",
+		"social": [
+			{
+				"name": "facebook",
+				"url": "https://www.facebook.com/profile.php?id=100011436105652",
+				"className": "fa fa-facebook"
+			},
+			{
+				"name": "linkedin",
+				"url": "https://www.linkedin.com/in/rupayan-chakraborty-0b610214b/",
+				"className": "fa fa-linkedin"
+			},
+			{
+				"name": "github",
+				"url": "http://github.com/w3rc",
+				"className": "fa fa-github"
+			}
+		]
+	},
+	"resume": {
+		"skillmessage": "These are my skills",
+		"education": [
+			{
+				"school": "Techno Engineering College Banipur",
+				"degree": "B.Tech in Computer Science and Engineering",
+				"graduated": "July 2020",
+				"description": "Graduated with 8.11 DGPA"
+			}
+		],
+		"work": [
+			{
+				"company": "Geotech Infoservices Pvt Ltd",
+				"title": "Software Engineer",
+				"years": "March 2021 - Present"
+			},
+			{
+				"company": "CampusMaster",
+				"title": "Flutter Developer Intern",
+				"years": "September 2020 - November 2020"
+			}
+		],
+		"skills": [
+			{
+				"name": "Node.JS",
+				"level": "85%"
+			},
+			{
+				"name": "Nest.JS",
+				"level": "85%"
+			},
+			{
+				"name": "GraphQL",
+				"level": "65%"
+			},
+			{
+				"name": "TypeScript",
+				"level": "85%"
+			},
+			{
+				"name": "MongoDB",
+				"level": "80%"
+			},
+			{
+				"name": "ReactJs",
+				"level": "95%"
+			},
+			{
+				"name": "CSS",
+				"level": "95%"
+			},
+			{
+				"name": "Git",
+				"level": "80%"
+			},
+			{
+				"name": "AWS (EC2, S3)",
+				"level": "80%"
+			},
+			{
+				"name": "Firebase (Firestore, Authentication, Cloud Functions)",
+				"level": "75%"
+			},
+			{
+				"name": "Docker",
+				"level": "55%"
+			}
+		]
+	},
+	"portfolio": {
+		"projects": [
+			{
+				"title": "Amazon Clone",
+				"description": "Amazon Clone with React & Firebase",
+				"image": "amazon.png",
+				"source": "https://github.com/w3rc/amazon-clone",
+				"deploy": "https://rc-amazon-clone.netlify.app/"
+			},
+			{
+				"title": "Pizza Joint",
+				"description": "Pizza Joint with React & Framer Motion",
+				"image": "pizza.png",
+				"source": "https://github.com/w3rc/Pizza-joint",
+				"deploy": "https://rc-pizza-joint.netlify.app/"
+			},
+			{
+				"title": "Spotify Clone",
+				"description": "Spotify Clone with Spotify API & React",
+				"image": "spotify.png",
+				"source": "https://github.com/w3rc/spotify-clone",
+				"deploy": "https://rc-spotify-clone.netlify.app/"
+			},
+			{
+				"title": "Tiktok Clone",
+				"description": "Tiktok Clone with React, Firestore and Firebase Storage",
+				"image": "tiktok.jpg",
+				"source": "https://github.com/w3rc/tiktok-clone",
+				"deploy": "https://rc-tiktok-clone.netlify.app/"
+			},
+			{
+				"title": "A URL Shortener(Backend)",
+				"description": "A URL Shortener with Node",
+				"image": "rsh.jpeg",
+				"source": "https://github.com/w3rc/r-sh",
+				"deploy": null
+			},
+			{
+				"title": "Zoom Clone(Backend)",
+				"description": "A Zoom Clone with Node",
+				"image": "zoom.png",
+				"source": "https://github.com/w3rc/zoom-clone",
+				"deploy": null
+			}
+		]
+	},
+	"testimonials": {
+		"testimonials": []
+	}
 }
