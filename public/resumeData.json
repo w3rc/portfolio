@@ -1,9 +1,11 @@
 {
 	"main": {
 		"name": "Rupayan Chakraborty",
-		"occupation": "Backend Developer",
+		"occupation": "Software Development Engineer",
 		"image": "avatar.jpg",
-		"bio": "I'm a Backend Developer, specialized in Node.Js and MongoDB. I have also worked with languages like Python, Java and Rust",
+		"bio": "As a skilled developer with expertise in Microservices and Blockchain technology, I am fluent in
+multiple coding languages. I am always on the lookout for new challenges to conquer, where I can
+push the boundaries of what's possible in the field of technology.",
 		"contactmessage": "Get in touch with me to receive further details.",
 		"email": "rupayanc16@gmail.com",
 		"phone": "+91 7908045561",
@@ -14,16 +16,11 @@
 			"country": "India",
 			"zip": "735101"
 		},
-		"resumedownload": "https://drive.google.com/file/d/1Nu4RwEHWvyee_Tfrv4vlRy769eoUU8uq/view?usp=sharing",
+		"resumedownload": "https://drive.google.com/file/d/1GBL_j6F7R9AmsYzKA1HJZMjOA9OerTp1/view?usp=sharing",
 		"social": [
 			{
-				"name": "facebook",
-				"url": "https://www.facebook.com/profile.php?id=100011436105652",
-				"className": "fa fa-facebook"
-			},
-			{
 				"name": "linkedin",
-				"url": "https://www.linkedin.com/in/rupayan-chakraborty-0b610214b/",
+				"url": "https://www.linkedin.com/in/crupayan/",
 				"className": "fa fa-linkedin"
 			},
 			{
@@ -45,23 +42,27 @@
 		],
 		"work": [
 			{
-				"company": "Geotech Infoservices Pvt Ltd",
+				"company": "Geotech InfoServices Pvt. Ltd.",
 				"title": "Software Engineer",
 				"years": "March 2021 - Present"
 			},
 			{
 				"company": "CampusMaster",
-				"title": "Flutter Developer Intern",
-				"years": "September 2020 - November 2020"
+				"title": "Flutter Developer",
+				"years": "September 2020 - December 2020"
 			}
 		],
 		"skills": [
 			{
-				"name": "Node.JS",
-				"level": "85%"
+				"name": "Blockchain",
+				"level": "75%"
 			},
 			{
-				"name": "Nest.JS",
+				"name": "Node.JS",
+				"level": "90%"
+			},
+			{
+				"name": "Java",
 				"level": "85%"
 			},
 			{
@@ -77,28 +78,12 @@
 				"level": "80%"
 			},
 			{
-				"name": "ReactJs",
-				"level": "95%"
-			},
-			{
-				"name": "CSS",
-				"level": "95%"
-			},
-			{
-				"name": "Git",
-				"level": "80%"
-			},
-			{
-				"name": "AWS (EC2, S3)",
-				"level": "80%"
-			},
-			{
-				"name": "Firebase (Firestore, Authentication, Cloud Functions)",
+				"name": "React",
 				"level": "75%"
 			},
 			{
 				"name": "Docker",
-				"level": "55%"
+				"level": "85%"
 			}
 		]
 	},
