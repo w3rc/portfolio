@@ -1,37 +1,114 @@
 import React from 'react';
+import { motion } from 'framer-motion';
+import { ChevronUp, Heart, Code, Coffee } from 'lucide-react';
 
 const Footer = ({ data }) => {
-  if (!data || !data.social) return null;
+  const scrollToTop = () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  };
 
-  const networks = data.social.map((network) => (
-    <li key={network.name}>
-      <a href={network.url} target="_blank" rel="noopener noreferrer">
+  const socialNetworks = data?.social?.map((network) => (
+    <motion.li key={network.name}>
+      <motion.a
+        href={network.url}
+        target="_blank"
+        rel="noopener noreferrer"
+        className="social-link"
+        whileHover={{ scale: 1.1, y: -2 }}
+        whileTap={{ scale: 0.9 }}
+      >
         <i className={network.className}></i>
-      </a>
-    </li>
+        <span className="social-tooltip">{network.name}</span>
+      </motion.a>
+    </motion.li>
   ));
 
   return (
-    <footer>
-      <div className="row">
-        <div className="twelve columns">
-          <ul className="social-links">
-            {networks}
-          </ul>
+    <footer className="footer">
+      <div className="footer-content">
+        <motion.div
+          className="footer-section"
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+        >
+          <h3 className="footer-title">Let's Connect</h3>
+          <p className="footer-description">
+            Feel free to reach out for collaborations or just a friendly hello
+          </p>
+          
+          {data?.social && (
+            <ul className="social-links">
+              {socialNetworks}
+            </ul>
+          )}
+        </motion.div>
 
-          <ul>
-            <li>Modified with love by the Clever Programmer team ♥️</li>
+        <motion.div
+          className="footer-section"
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ delay: 0.2 }}
+          viewport={{ once: true }}
+        >
+          <h3 className="footer-title">Quick Links</h3>
+          <ul className="footer-links">
+            <li><a href="#home" className="footer-link">Home</a></li>
+            <li><a href="#about" className="footer-link">About</a></li>
+            <li><a href="#resume" className="footer-link">Resume</a></li>
+            <li><a href="#portfolio" className="footer-link">Portfolio</a></li>
+            <li><a href="#contact" className="footer-link">Contact</a></li>
           </ul>
+        </motion.div>
 
-          <ul className="copyright">
-            <li>&copy; All credit goes to Tim Baker - Copyright 2017 Tim Baker</li>
-            <li>Design by <a title="Styleshout" href="http://www.styleshout.com/">Styleshout</a></li>
-          </ul>
-        </div>
-        <div id="go-top">
-          <a className="smoothscroll" title="Back to Top" href="#home">
-            <i className="icon-up-open"></i>
-          </a>
+        <motion.div
+          className="footer-section"
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ delay: 0.4 }}
+          viewport={{ once: true }}
+        >
+          <h3 className="footer-title">Made With</h3>
+          <div className="footer-tech">
+            <span className="tech-item">
+              <Code size={16} />
+              React
+            </span>
+            <span className="tech-item">
+              <Heart size={16} />
+              Passion
+            </span>
+            <span className="tech-item">
+              <Coffee size={16} />
+              Coffee
+            </span>
+          </div>
+        </motion.div>
+      </div>
+
+      <div className="footer-bottom">
+        <div className="footer-bottom-content">
+          <motion.div
+            className="footer-credits"
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            viewport={{ once: true }}
+          >
+            <p>© 2025 Portfolio. All rights reserved.</p>
+          </motion.div>
+
+          <motion.button
+            className="back-to-top"
+            onClick={scrollToTop}
+            whileHover={{ scale: 1.1 }}
+            whileTap={{ scale: 0.9 }}
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            viewport={{ once: true }}
+          >
+            <ChevronUp size={24} />
+            <span className="back-to-top-text">Back to Top</span>
+          </motion.button>
         </div>
       </div>
     </footer>

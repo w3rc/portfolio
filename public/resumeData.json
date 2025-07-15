@@ -1,137 +1,99 @@
 {
-	"main": {
-		"name": "Rupayan Chakraborty",
-		"occupation": "Software Development Engineer",
-		"image": "avatar.jpg",
-		"bio": "As a skilled developer with expertise in Microservices and Blockchain technology, I am fluent in multiple coding languages. I am always on the lookout for new challenges to conquer, where I can push the boundaries of what's possible in the field of technology.",
-		"contactmessage": "Get in touch with me to receive further details.",
-		"email": "rupayanc16@gmail.com",
-		"phone": "+91 7908045561",
-		"address": {
-			"street": "Deshbandhu Para, Malibagan",
-			"city": "Jalpaiguri",
-			"state": "West Bengal",
-			"country": "India",
-			"zip": "735101"
-		},
-		"resumedownload": "https://drive.google.com/file/d/1GBL_j6F7R9AmsYzKA1HJZMjOA9OerTp1/view?usp=sharing",
-		"social": [
-			{
-				"name": "linkedin",
-				"url": "https://www.linkedin.com/in/crupayan/",
-				"className": "fa fa-linkedin"
-			},
-			{
-				"name": "github",
-				"url": "http://github.com/w3rc",
-				"className": "fa fa-github"
-			}
-		]
-	},
-	"resume": {
-		"skillmessage": "These are my skills",
-		"education": [
-			{
-				"school": "Techno Engineering College Banipur",
-				"degree": "B.Tech in Computer Science and Engineering",
-				"graduated": "July 2020",
-				"description": "Graduated with 8.11 DGPA"
-			}
-		],
-		"work": [
-			{
-				"company": "Geotech InfoServices Pvt. Ltd.",
-				"title": "Software Engineer",
-				"years": "March 2021 - Present"
-			},
-			{
-				"company": "CampusMaster",
-				"title": "Flutter Developer",
-				"years": "September 2020 - December 2020"
-			}
-		],
-		"skills": [
-			{
-				"name": "Blockchain",
-				"level": "75%"
-			},
-			{
-				"name": "Node.JS",
-				"level": "90%"
-			},
-			{
-				"name": "Java",
-				"level": "85%"
-			},
-			{
-				"name": "GraphQL",
-				"level": "65%"
-			},
-			{
-				"name": "TypeScript",
-				"level": "85%"
-			},
-			{
-				"name": "MongoDB",
-				"level": "80%"
-			},
-			{
-				"name": "React",
-				"level": "75%"
-			},
-			{
-				"name": "Docker",
-				"level": "85%"
-			}
-		]
-	},
-	"portfolio": {
-		"projects": [
-			{
-				"title": "Amazon Clone",
-				"description": "Amazon Clone with React & Firebase",
-				"image": "amazon.png",
-				"source": "https://github.com/w3rc/amazon-clone",
-				"deploy": "https://rc-amazon-clone.netlify.app/"
-			},
-			{
-				"title": "Pizza Joint",
-				"description": "Pizza Joint with React & Framer Motion",
-				"image": "pizza.png",
-				"source": "https://github.com/w3rc/Pizza-joint",
-				"deploy": "https://rc-pizza-joint.netlify.app/"
-			},
-			{
-				"title": "Spotify Clone",
-				"description": "Spotify Clone with Spotify API & React",
-				"image": "spotify.png",
-				"source": "https://github.com/w3rc/spotify-clone",
-				"deploy": "https://rc-spotify-clone.netlify.app/"
-			},
-			{
-				"title": "Tiktok Clone",
-				"description": "Tiktok Clone with React, Firestore and Firebase Storage",
-				"image": "tiktok.jpg",
-				"source": "https://github.com/w3rc/tiktok-clone",
-				"deploy": "https://rc-tiktok-clone.netlify.app/"
-			},
-			{
-				"title": "A URL Shortener(Backend)",
-				"description": "A URL Shortener with Node",
-				"image": "rsh.jpeg",
-				"source": "https://github.com/w3rc/r-sh",
-				"deploy": null
-			},
-			{
-				"title": "Zoom Clone(Backend)",
-				"description": "A Zoom Clone with Node",
-				"image": "zoom.png",
-				"source": "https://github.com/w3rc/zoom-clone",
-				"deploy": null
-			}
-		]
-	},
-	"testimonials": {
-		"testimonials": []
-	}
+  "main": {
+    "name": "Rupayan Chakraborty",
+    "occupation": "Senior Backend Engineer | System Architect",
+    "image": "avatar.jpg",
+    "bio": "Senior Backend Engineer with 4+ years of experience architecting scalable microservices, container orchestration systems, and high-performance APIs. Specialized in Python, FastAPI, Docker, and cloud infrastructure with a proven track record of building robust backend systems that handle millions of requests. Currently leading backend development for AI deployment platforms and blockchain protocols.",
+    "contactmessage": "Let's discuss backend architecture, scalable systems, and engineering challenges!",
+    "email": "rupayanc16@gmail.com",
+    "phone": "+91 7908045561",
+    "resumedownload": "https://drive.google.com/file/d/1GBL_j6F7R9AmsYzKA1HJZMjOA9OerTp1/view?usp=sharing",
+    "social": [
+      {
+        "name": "linkedin",
+        "url": "https://www.linkedin.com/in/crupayan/",
+        "className": "fa fa-linkedin"
+      },
+      {
+        "name": "github",
+        "url": "https://github.com/w3rc",
+        "className": "fa fa-github"
+      }
+    ]
+  },
+  "resume": {
+    "education": [
+      {
+        "school": "Techno Engineering College Banipur",
+        "degree": "B.Tech in Computer Science and Engineering",
+        "graduated": "July 2020",
+        "description": "Graduated with 8.11 DGPA. Specialized in systems programming, data structures, algorithms, and software architecture with focus on backend development fundamentals."
+      }
+    ],
+    "work": [
+      {
+        "company": "FlowScale",
+        "title": "Senior Backend Engineer",
+        "years": "April 2023 – Present",
+        "description": "Lead backend architect for a serverless AI deployment platform. Built scalable FastAPI microservices handling 10K+ concurrent deployments. Designed container orchestration pipeline with AWS ECS, implemented dynamic subdomain routing with Traefik proxy, and created GitHub-based CI/CD automation. Optimized database performance and implemented Redis caching for 80% faster response times."
+      },
+      {
+        "company": "Geotech InfoServices Pvt. Ltd.",
+        "title": "Backend Software Engineer",
+        "years": "March 2021 - April 2023",
+        "description": "Developed enterprise-level backend systems for an insurance platform."
+      }
+    ],
+    "skills": [
+      { "name": "Python", "level": "95%" },
+      { "name": "FastAPI", "level": "92%" },
+      { "name": "Docker & Kubernetes", "level": "90%" },
+      { "name": "AWS (ECS, EC2, S3)", "level": "88%" },
+      { "name": "Node.js", "level": "85%" },
+      { "name": "REST APIs & GraphQL", "level": "88%" },
+      { "name": "Microservices Architecture", "level": "85%" },
+      { "name": "CI/CD & DevOps", "level": "80%" },
+      { "name": "Blockchain Integration", "level": "75%" },
+      { "name": "System Design", "level": "85%" },
+      { "name": "Traefik Proxy", "level": "75%" },
+      { "name": "Modal.com", "level": "70%" }
+    ]
+  },
+  "portfolio": {
+    "projects": [
+      {
+        "title": "Zoom Clone (Backend)",
+        "description": "Node-based signaling and room management server for a video conferencing platform prototype.",
+        "image": "zoom.png",
+        "source": "https://github.com/w3rc/zoom-clone",
+        "deploy": null
+      },
+      {
+        "title": "Real-time Chat Backend",
+        "description": "WebSocket-based chat server with Node.js and Socket.io. Implements message queuing, user presence tracking, and horizontal scaling with Redis pub/sub.",
+        "image": "chat-backend.jpg",
+        "source": "https://github.com/w3rc/chat-backend",
+        "deploy": null
+      },
+      {
+        "title": "URL Shortener API",
+        "description": "High-performance URL shortening service with analytics. Express.js backend with MongoDB, Redis caching, and comprehensive click tracking and analytics dashboard.",
+        "image": "rsh.jpeg",
+        "source": "https://github.com/w3rc/r-sh",
+        "deploy": null
+      }
+    ]
+  },
+  "testimonials": {
+    "testimonials": [
+      {
+        "text": "Rupayan is one of the most proactive and technically gifted engineers I've worked with. His work on FlowScale's container orchestration was game-changing.",
+        "user": "Anirban Dasgupta, CTO at FlowScale"
+      },
+      {
+        "text": "He doesn't just write code – he builds scalable systems. Watching Vortyx evolve under his leadership is inspiring.",
+        "user": "Tamal Paul, Blockchain Advisor"
+      }
+    ]
+  }
 }

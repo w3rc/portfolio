@@ -1,83 +1,155 @@
-import React from 'react';
+import React, { useEffect, useRef, useState } from 'react';
+import { motion, useInView } from 'framer-motion';
+import { Calendar, MapPin, Award, Code, Star } from 'lucide-react';
 
 const Resume = ({ data }) => {
   if (!data) return null;
 
   const { skillmessage, education = [], work = [], skills = [] } = data;
+  const [skillsAnimated, setSkillsAnimated] = useState(false);
+  const skillsRef = useRef(null);
+  const isSkillsInView = useInView(skillsRef, { once: true });
 
-  const educationItems = education.map((edu) => (
-    <div key={edu.school}>
-      <h3>{edu.school}</h3>
-      <p className="info">
-        {edu.degree} <span>&bull;</span>
-        <em className="date">{edu.graduated}</em>
-      </p>
-      <p>{edu.description}</p>
-    </div>
+  useEffect(() => {
+    if (isSkillsInView && !skillsAnimated) {
+      setSkillsAnimated(true);
+    }
+  }, [isSkillsInView, skillsAnimated]);
+
+  const educationItems = education.map((edu, index) => (
+    <motion.div
+      key={edu.school}
+      className="timeline-item"
+      initial={{ opacity: 0, x: -50 }}
+      whileInView={{ opacity: 1, x: 0 }}
+      transition={{ delay: index * 0.1 }}
+      viewport={{ once: true }}
+    >
+      <div className="timeline-marker">
+        <Award className="timeline-icon" />
+      </div>
+      <div className="timeline-content">
+        <h3 className="timeline-title">{edu.school}</h3>
+        <div className="timeline-meta">
+          <span className="degree">{edu.degree}</span>
+          <span className="date">
+            <Calendar size={16} />
+            {edu.graduated}
+          </span>
+        </div>
+        <p className="timeline-description">{edu.description}</p>
+      </div>
+    </motion.div>
   ));
 
-  const workItems = work.map((job) => (
-    <div key={job.company}>
-      <h3>{job.company}</h3>
-      <p className="info">
-        {job.title}<span>&bull;</span> 
-        <em className="date">{job.years}</em>
-      </p>
-      <p>{job.description}</p>
-    </div>
+  const workItems = work.map((job, index) => (
+    <motion.div
+      key={job.company}
+      className="timeline-item"
+      initial={{ opacity: 0, x: 50 }}
+      whileInView={{ opacity: 1, x: 0 }}
+      transition={{ delay: index * 0.1 }}
+      viewport={{ once: true }}
+    >
+      <div className="timeline-marker">
+        <Code className="timeline-icon" />
+      </div>
+      <div className="timeline-content">
+        <h3 className="timeline-title">{job.company}</h3>
+        <div className="timeline-meta">
+          <span className="position">{job.title}</span>
+          <span className="date">
+            <Calendar size={16} />
+            {job.years}
+          </span>
+        </div>
+        <p className="timeline-description">{job.description}</p>
+      </div>
+    </motion.div>
   ));
 
-  const skillItems = skills.map((skill) => {
-    const className = `bar-expand ${skill.name.toLowerCase()}`;
-    return (
-      <li key={skill.name}>
-        <span style={{ width: skill.level }} className={className}></span>
-        <em>{skill.name}</em>
-      </li>
-    );
-  });
+  const skillItems = skills.map((skill, index) => (
+    <motion.div
+      key={skill.name}
+      className="skill-item"
+      initial={{ opacity: 0, scale: 0.8 }}
+      whileInView={{ opacity: 1, scale: 1 }}
+      transition={{ delay: index * 0.1 }}
+      viewport={{ once: true }}
+    >
+      <div className="skill-header">
+        <span className="skill-name">{skill.name}</span>
+        <span className="skill-level">{skill.level}</span>
+      </div>
+      <div className="skill-bar">
+        <motion.div
+          className="skill-progress"
+          initial={{ width: 0 }}
+          animate={skillsAnimated ? { width: skill.level } : { width: 0 }}
+          transition={{ duration: 1, delay: index * 0.1 }}
+        />
+      </div>
+    </motion.div>
+  ));
 
   return (
-    <section id="resume">
-      <div className="row education">
-        <div className="three columns header-col">
-          <h1><span>Education</span></h1>
+    <section id="resume" className="resume-section">
+      <motion.div
+        className="section-header"
+        initial={{ opacity: 0, y: 30 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true }}
+      >
+        <h2 className="section-title">Experience & Education</h2>
+      </motion.div>
+
+      <div className="resume-grid">
+        <div className="resume-column">
+          <motion.div
+            className="resume-section-header"
+            initial={{ opacity: 0, x: -30 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true }}
+          >
+            <Award className="section-icon" />
+            <h3>Education</h3>
+          </motion.div>
+          <div className="timeline">
+            {educationItems}
+          </div>
         </div>
 
-        <div className="nine columns main-col">
-          <div className="row item">
-            <div className="twelve columns">
-              {educationItems}
-            </div>
+        <div className="resume-column">
+          <motion.div
+            className="resume-section-header"
+            initial={{ opacity: 0, x: 30 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true }}
+          >
+            <Code className="section-icon" />
+            <h3>Work Experience</h3>
+          </motion.div>
+          <div className="timeline">
+            {workItems}
           </div>
         </div>
       </div>
 
-      <div className="row work">
-        <div className="three columns header-col">
-          <h1><span>Work</span></h1>
+      <motion.div
+        className="skills-section"
+        initial={{ opacity: 0, y: 50 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true }}
+      >
+        <div className="resume-section-header">
+          <Star className="section-icon" />
+          <h3>Skills & Expertise</h3>
         </div>
-
-        <div className="nine columns main-col">
-          {workItems}
+        <p className="skills-description">{skillmessage}</p>
+        <div className="skills-grid" ref={skillsRef}>
+          {skillItems}
         </div>
-      </div>
-
-      <div className="row skill">
-        <div className="three columns header-col">
-          <h1><span>Skills</span></h1>
-        </div>
-
-        <div className="nine columns main-col">
-          <p>{skillmessage}</p>
-
-          <div className="bars">
-            <ul className="skills">
-              {skillItems}
-            </ul>
-          </div>
-        </div>
-      </div>
+      </motion.div>
     </section>
   );
 };
